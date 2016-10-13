@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // if (window.localStorage) {
+        //     alert('This browser supports localStorage');
+        // } else {
+        //     alert('This browser does NOT support localStorage');
+        // }
+        // localstorage
+        var storage = window.localStorage;
+        storage.setItem('name', 'cc');
+        storage.setItem('namea', 'dd'); //设置存储信息
+        console.log(storage.getItem('name')); //获取存储内容
+        storage.removeItem('name'); //移除指定的存储
+        // storage.clear(); //清空存储
+        // sessionstorage
+        var ss = window.sessionStorage;
+        ss.setItem('name', 'cc');
+        ss.setItem('namea', 'dd'); //设置存储信息
+        console.log(ss.getItem('name')); //获取存储内容
+        // ss.removeItem('name'); //移除指定的存储
+        // ss.clear(); //清空存储
+    </script>
+</body>
+
+</html>
